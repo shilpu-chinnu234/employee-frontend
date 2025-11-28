@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Management</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+    input, button {
+      padding: 8px;
+      margin: 5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: left;
+    }
+    .form-box {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Employee Management System</h2>
+
+  <!-- ADD EMPLOYEE FORM -->
+  <div class="form-box">
+    <h3>Add Employee</h3>
+    <input type="text" id="name" placeholder="Name"><br>
+    <input type="text" id="position" placeholder="Position"><br>
+    <input type="number" id="salary" placeholder="Salary"><br>
+    <button onclick="addEmployee()">Add</button>
+  </div>
+
+  <!-- EMPLOYEE TABLE -->
+  <h3>Employee List</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Salary</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="employeeTable"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
