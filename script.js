@@ -1,4 +1,4 @@
-const API = "https://backend02-nqu8.onrender.com";
+const API = "https://backend02-nqu8.onrender.com/employees";
 
 // Fetch and display employees
 async function loadEmployees() {
@@ -46,5 +46,4 @@ async function deleteEmployee(id) {
   loadEmployees();
 }
 
-// Load employees on page load
 loadEmployees();
